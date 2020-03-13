@@ -184,7 +184,8 @@ def main():
         addr.addNewEntry()
     else:
         logger.info("Nothing has changed.")
-    panic("Done. Program exits.", 0)
+    logger.info("Done. Program exits.")
+    sys.exit(0)
 
 
 if __name__ == '__main__':
