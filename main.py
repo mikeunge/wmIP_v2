@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 # Global const.
-LOGGING_PATH = "wmip_v2.log"
+LOGGING_PATH = "/scripts/wmIP_v2/wmip_v2.log"
 
 
 def panic(err_msg, err_code):
@@ -171,7 +171,7 @@ class Address:
 
 def main():
     url = "https://api.ipify.org/?format=text"  # API endpoint.
-    storage = "storage.json"    # All the changes are kept in here.
+    storage = "/scripts/wmIP_v2/storage.json"    # All the changes are kept in here.
 
     addr = Address(url, storage)
     addr.getPublicAddress()
