@@ -3,10 +3,13 @@
 Script that gets your public ip 🌎.
 This little script gets your puplic ip and stores it (and all the changes) in a storage file.
 
+Feel free to give it a try.
+
 
 ## But why?
 
-Because I need the public ip from mine (and some other) unix boxes to do other stuff (like ssh or a vpn).
+Because I need the public ip from mine and/or some other unix boxes to do some stuff (like a ssh or vpn connection).
+
 The script is fast and it just works as I want it to.
 
 
