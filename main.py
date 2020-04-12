@@ -9,7 +9,9 @@ from datetime import datetime
 
 
 # Global const.
-LOGGING_PATH = "/scripts/wmIP_v2/wmip_v2.log"
+LOGGING_PATH = "/scripts/wmIP_v2/wmip_v2.log"   # Logs are stored here.
+STORAGE_PATH = "/scripts/wmIP_v2/storage.json"  # Track all the changes.
+ENDPOINT = "https://api.ipify.org/?format=text" # API Endpoint.
 
 
 def panic(err_msg, err_code):
@@ -170,10 +172,7 @@ class Address:
         logger.info(f"New entry: {newEntry}")
 
 def main():
-    url = "https://api.ipify.org/?format=text"  # API endpoint.
-    storage = "/scripts/wmIP_v2/storage.json"    # All the changes are kept in here.
-
-    addr = Address(url, storage)
+    addr = Address(ENDPOINT, STORAGE_PATH)
     addr.getPublicAddress()
     addr.getLatestEntry()
 
