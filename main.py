@@ -1,5 +1,9 @@
 #!/bin/usr/python3 *
 #-*- coding: utf-8 -*-
+#
+# This is the main part of the wmIP script.
+# It connects to an API endpoint, retrieves the public ip and stores it in the given storage.json file.
+# 
 import os
 import sys
 import json
